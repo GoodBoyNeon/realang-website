@@ -13,7 +13,8 @@ export default {
       "second-col": "#4B727A",
       "third-col": "#6D8E7E",
       "fourth-col": "#415A42",
-      "fifth-col": "1B2E3E",
+      "fifth-col": "#1B2E3E",
+      "sixth-col": "#8CBCE1"
     },
   },
   plugins: [],
