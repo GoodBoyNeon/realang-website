@@ -1,0 +1,19 @@
+---
+type Props = {
+  href: string;
+  isPrimary: boolean;
+};
+
+const { href, isPrimary } = Astro.props;
+
+let className =
+  "hidden min-w-[158px] text-lg h-[38px] text-center rounded-full transition-all hover:scale-110 active:scale-90 ease-in-out items-center lg:flex p-6 gap-1 shadow";
+
+isPrimary
+  ? (className += " bg-sixth-col text-dark")
+  : (className += " bg-transparent text-grey bg-accent-dark");
+---
+
+<a href={href} class={className}>
+  <slot />
+</a>

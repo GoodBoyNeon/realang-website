@@ -1,30 +1,32 @@
 ---
-
+import LinkButton from './LinkButton.astro'
 ---
 
 <div
   id="body"
-  class="text-t-dark max-w-[20rem] pt-[10rem] m-auto flex lg:pt-[15rem] lg:max-w-[75rem] items-center justify-center tracking-tight"
+  class="text-t-dark h-screen m-auto flex items-center justify-center tracking-tight "
 >
-  <div class="pt-8 w-auto">
+  <div class="m-auto flex flex-col justify-center items-center">
     <p
       id="hello-text"
-      class="flex justify-center text-3xl font-medium lg:text-4xl text-center"
-    >
-      it's as real as it gets
-    </p>
+      class="flex justify-center text-3xl lg:text-4xl text-center font-bold"
+    >Keeping it 💯 Real<span class="text-sixth-col">.</span></p>
+
+
     <p
       id="description"
-      class="text-xl max-w-[623px] mb-[1rem] md:text-md md:leading-10 pt-3 text-center"
-    >
-      <span class="md:pl-28"
-        >Realang is an esolang made for <span class="text-sixth-col">fun.</span>
-        <br />
-        <span class="md:pl-10"
-          >Syntax from "Male talk" go read some Instagram <br /><span
-            class="md:pl-28"></span>comments you will know what it is.
-        </span>
-      </span>
-    </p>
+      class="text-xl text-grey max-w-[623px] mb-[1rem] md:text-md md:leading-10 pt-3 text-center"
+    >Realang is an esolang made for fun!</p>
+
+    <div class="flex gap-5">
+    <LinkButton href="https://github.com/realang/realang#installation" isPrimary={true}>Install</LinkButton>
+
+    <LinkButton href="https://github.com/realang/realang" isPrimary={false}>
+      <img src="/images/redirect.png" class="opacity-65"><p></p>
+      <h1>Github</h1><p></p>
+      <img src="/images/github.png" class="opacity-65">
+    </LinkButton>
+
+    </div>
   </div>
 </div>
