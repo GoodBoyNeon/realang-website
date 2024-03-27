@@ -7,7 +7,7 @@ type Props = {
 const { href, isPrimary } = Astro.props;
 
 let className =
-  "hidden min-w-[158px] text-lg h-[38px] text-center rounded-full transition-all hover:scale-110 active:scale-90 ease-in-out items-center lg:flex p-6 gap-1 shadow";
+  "flex min-w-[158px] text-lg h-[38px] text-center rounded-full transition-all hover:scale-110 active:scale-90 ease-in-out items-center  p-6 gap-1 shadow";
 
 isPrimary
   ? (className += " bg-sixth-col text-dark")
