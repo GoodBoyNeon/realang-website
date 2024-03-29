@@ -1,29 +1,53 @@
 <header
-  class="text-t-dark flex flex-col pt-8 lg:flex-row text-center lg:w-full px-24 items-center align-center"
+  class="dark:text-t-dark flex flex-col pt-8 lg:flex-row text-center lg:w-full px-24 items-center align-center"
   id="headers"
 >
   <div>
-    <a href="/" class="flex items-center text-2xl justify-center">
+    <a href="/" class="dark:hidden flex items-center text-2xl justify-center tracking-tight">
+      <span class="text-first-col">r</span>
+      <span class="text-second-col">e</span>
+      <span class="text-third-col">a</span>
+      <span class="text-fourth-col">l</span>
+      <span class="text-fifth-col">.</span>
+    </a>
+    <a href="/" class="dark:flex hidden items-center text-2xl justify-center">
       real<span class="text-sixth-col">.</span>
     </a>
   </div>
 
-  <div class="mt-5 flex text-xl lg:ml-auto justify-center gap-6">
-    <a
-      href="/"
-      class="transition-all duration-200 ease-in-out hover:text-t-dark text-grey"
-      >about</a
+  <div class="dark:hidden flex gap-6 lg:ml-auto justify-center text-xl items-center">
+    <a href="/" class="flex">
+      <span class="text-first-col">a</span>
+      <span class="text-second-col">b</span>
+      <span class="text-third-col">o</span>
+      <span class="text-fourth-col">u</span>
+      <span class="text-fifth-col">t</span>
+    </a>
+    <a href="/docs" class="flex">
+      <span class="text-first-col">d</span>
+      <span class="text-second-col">o</span>
+      <span class="text-third-col">c</span>
+      <span class="text-fourth-col">s</span></a
     >
     <a
-      href="/blogs"
-      class="transition-all duration-200 ease-in-out hover:text-t-dark text-grey"
-      >docs</a
-    >
-    <a
-      href="https://github.com/JadeBetty/portfolio"
+      href="https://github.com/realang/realang"
       target="_blank"
-      class="transition-all duration-200 ease-in-out hover:text-t-dark text-grey"
-      >download</a
+      class="flex"
     >
+      <span class="text-first-col">d</span>
+      <span class="text-second-col">o</span>
+      <span class="text-third-col">w</span>
+      <span class="text-fourth-col">n</span>
+      <span class="text-first-col">l</span>
+      <span class="text-second-col">o</span>
+      <span class="text-third-col">a</span>
+      <span class="text-fourth-col">d</span>
+    </a>
+  </div>
+
+  <div class="hidden dark:flex gap-6 lg:ml-auto justify-center text-xl items-center">
+    <a href="/" class="hover:text-t-dark text-grey">about</a>
+    <a href="/docs" class="hover:text-t-dark text-grey">docs</a>
+    <a href="https://github.com/realang/realang" class="hover:text-t-dark text-grey" target="_blank">download</a>
   </div>
 </header>
